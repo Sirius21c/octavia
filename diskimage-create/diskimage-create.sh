@@ -180,7 +180,7 @@ AMP_BACKEND=${AMP_BACKEND:-"haproxy-octavia"}
 
 AMP_CACHEDIR=${AMP_CACHEDIR:-"$HOME/.cache/image-create"}
 
-AMP_BASEOS=${AMP_BASEOS:-"ubuntu-minimal"}
+AMP_BASEOS=${AMP_BASEOS:-"centos"}
 
 if [ "$AMP_BASEOS" = "ubuntu-minimal" ]; then
     export DIB_RELEASE=${AMP_DIB_RELEASE:-"xenial"}
@@ -192,7 +192,7 @@ AMP_OUTPUTFILENAME=${AMP_OUTPUTFILENAME:-"$PWD/amphora-x64-haproxy"}
 
 AMP_IMAGETYPE=${AMP_IMAGETYPE:-"qcow2"}
 
-AMP_IMAGESIZE=${AMP_IMAGESIZE:-2}
+AMP_IMAGESIZE=${AMP_IMAGESIZE:-4}
 
 AMP_DISABLE_SSHD=${AMP_DISABLE_SSHD:-0}
 
